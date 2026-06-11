@@ -15,7 +15,7 @@
 
 <p align="center">
   <!-- Replace with actual cover image once available -->
-  <img src="assets/stroboframes.png" alt="Swing-up of a magnetically actuated inverted pendulum" width="80%">
+  <img src="assets/stroboframes.jpg" alt="Swing-up of a magnetically actuated inverted pendulum" width="80%">
   <img src="assets/control_loop.jpg" alt="Control architecture for the swing-up of a magnetically actuated inverted pendulum" width="80%">
 </p>
 
@@ -206,7 +206,7 @@ rosservice call /pendulum_ILC_swingup_node/switch_eq_feedback "value: true"
 
 <p align="center">
   <a href="https://youtu.be/f0wrxi1No0U">
-    <img src="assets/thumbnail.png" alt="Watch the demo" width="600">
+    <img src="assets/thumbnail.jpg" alt="Watch the demo" width="600">
   </a>
 </p>
 
