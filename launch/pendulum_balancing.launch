@@ -1,0 +1,19 @@
+<launch>
+    <node pkg="emns_invpend_swingup" name="pendulum_balancing_node" type="pendulum_balancing_node.py" output="screen">
+        <param name="b_hardware_connected" value= "true" />
+        <param name="b_use_angle_correction" value= "false" />
+        <param name="b_use_prerecoded_integrator_torques" value= "false" />
+        <param name="b_use_prerecoded_correction_angles" value= "false" />
+
+        <param name="calibration_file_name" value= "Navion_1_2_Calibration_old.yaml"/>
+        <param name="system_type" value= "Navion"/>
+        <param name="b_southpole_up" value= "false" />
+        <param name="verbose" value= "true" />
+        
+        <param name="vicon_callback_topic_actuator" value="/vicon/actuator_20cm/catheter_tip" />
+        <param name="vicon_callback_topic_pendulum" value="/vicon/inv_pend/pendulum_base" />
+    </node>
+    <!-- <node pkg="tnb_mns_driver" name="tnb_mns_driver_node" type="tnb_mns_driver_node" />
+    <node pkg="control_utils" name="watchdog_state_jecb_node" type="watchdog_state_jecb.py" output="screen" />
+    <node pkg="control_utils" name="watchdog_dc_link_voltage_jecb_node" type="watchdog_voltage_jecb.py" output="screen" /> -->
+</launch>
